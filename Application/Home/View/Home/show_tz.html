@@ -1,0 +1,31 @@
+<include file="header" />
+
+	<div class="wraper">
+		<table class="am-table">
+			<thead>
+				<tr>
+					<th>标题</th>
+					<th>所在地</th>
+					<th>联系人</th>
+					<th>时间</th>
+					<th>删除</th>
+				</tr>
+			</thead>
+			<tbody>
+				<volist id="v" name="data">
+				<tr>
+					<td>{$v.title}</td>
+					<td>{$v.szd}</td>
+					<td>{$v.lxr}</td>
+					<td>{$v.time|date="Y.m.d H:i:s",###}</td>
+					<td><a href="{:U('delete_tz',array('id'=>$v['_id']))}">删除</a></td>
+				</tr>
+				</volist>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+<script src="__PUBLIC__/js/jquery.min.js" charset="utf-8"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.4.0/js/amazeui.min.js" charset="utf-8"></script>
+</html>
