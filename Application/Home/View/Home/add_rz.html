@@ -1,0 +1,173 @@
+<include file="header" />
+
+    <div class="wraper">
+        <form class="am-form" method="post" action="{:U('add_news_post')}">
+        <fieldset>
+            <div class="addXM">
+    			<div class="formDv">
+    				<h1>企业发布融资信息表单</h1>
+    			</div>
+
+    			<div class="formDv">
+                    <div class="am-form-group">
+                        <label>项目名称</label>
+        				<input type="text" class="inputTxt" placeholder="项目名称" name="title">
+                    </div>
+    			</div>
+
+    			<div class="formDv">
+                    <div class="am-form-group">
+                        <label>融资方式</label>
+                        <div class="formDvDX">
+                            <label class="am-checkbox-inline" for="tzfs1"><input type="checkbox" data-am-ucheck name="tzfs[]" value="不限" id="tzfs1">不限</label>
+            				<label class="am-checkbox-inline" for="tzfs2"><input type="checkbox" data-am-ucheck name="tzfs[]" value="合资" id="tzfs2">合资</label>
+            				<label class="am-checkbox-inline" for="tzfs3"><input type="checkbox" data-am-ucheck name="tzfs[]" value="合作" id="tzfs3">合作</label>
+            				<label class="am-checkbox-inline" for="tzfs4"><input type="checkbox" data-am-ucheck name="tzfs[]" value="独资" id="tzfs4">独资</label>
+            				<label class="am-checkbox-inline" for="tzfs5"><input type="checkbox" data-am-ucheck name="tzfs[]" value="入股" id="tzfs5">入股</label>
+            				<label class="am-checkbox-inline" for="tzfs6"><input type="checkbox" data-am-ucheck name="tzfs[]" value="固定回报" id="tzfs6">固定回报</label>
+            				<label class="am-checkbox-inline" for="tzfs7"><input type="checkbox" data-am-ucheck name="tzfs[]" value="风险投资" id="tzfs7">风险投资</label>
+            				<label class="am-checkbox-inline" for="tzfs8"><input type="checkbox" data-am-ucheck name="tzfs[]" value="借款" id="tzfs8">借款</label>
+            				<label class="am-checkbox-inline" for="tzfs9"><input type="checkbox" data-am-ucheck name="tzfs[]" value="面洽" id="tzfs9">面洽</label>
+        				</div>
+                    </div>
+    			</div>
+
+    			<div class="formDv">
+                    <div class="am-form-group">
+                        <label>项目阶段</label>
+                        <div class="formDvDX">
+            				<label class="am-radio" for="tzjd1"><input type="radio" data-am-ucheck checked name="tzjd[]" value="种子期" id="tzjd1">种子期</label>
+            				<label class="am-radio" for="tzjd2"><input type="radio" data-am-ucheck name="tzjd[]" value="初创期" id="tzjd2">初创期</label>
+            				<label class="am-radio" for="tzjd3"><input type="radio" data-am-ucheck name="tzjd[]" value="成长期" id="tzjd3">成长期</label>
+            				<label class="am-radio" for="tzjd4"><input type="radio" data-am-ucheck name="tzjd[]" value="扩张期" id="tzjd4">扩张期</label>
+            				<label class="am-radio" for="tzjd5"><input type="radio" data-am-ucheck name="tzjd[]" value="成熟期" id="tzjd5">成熟期</label>
+            				<label class="am-radio" for="tzjd6"><input type="radio" data-am-ucheck name="tzjd[]" value="Pre-IPO" id="tzjd6">Pre-IPO</label>
+        				</div>
+                    </div>
+    			</div>
+
+    			<div class="formDv">
+    				<div class="am-form-group">
+    				<label>所属行业</label>
+                    <div class="formDvDX">
+    				<label class="am-checkbox-inline" for="hy1"><input type="checkbox" name="hy[]" data-am-ucheck value="IT互联网" id="hy1">IT互联网</label>
+    				<label class="am-checkbox-inline" for="hy2"><input type="checkbox" name="hy[]" data-am-ucheck value="能源动力" id="hy2">能源动力</label>
+    				<label class="am-checkbox-inline" for="hy3"><input type="checkbox" name="hy[]" data-am-ucheck value="科研技术" id="hy3">科研技术</label>
+    				<label class="am-checkbox-inline" for="hy4"><input type="checkbox" name="hy[]" data-am-ucheck value="节能环保" id="hy4">节能环保</label>
+    				<label class="am-checkbox-inline" for="hy5"><input type="checkbox" name="hy[]" data-am-ucheck value="社会服务" id="hy5">社会服务</label>
+    				<label class="am-checkbox-inline" for="hy6"><input type="checkbox" name="hy[]" data-am-ucheck value="石油化工" id="hy6">石油化工</label>
+    				<label class="am-checkbox-inline" for="hy7"><input type="checkbox" name="hy[]" data-am-ucheck value="生物技术" id="hy7">生物技术</label>
+    				<label class="am-checkbox-inline" for="hy8"><input type="checkbox" name="hy[]" data-am-ucheck value="电子商务" id="hy8">电子商务</label>
+    				<label class="am-checkbox-inline" for="hy9"><input type="checkbox" name="hy[]" data-am-ucheck value="电子通讯" id="hy9">电子通讯</label>
+    				<br>
+                    <label class="am-checkbox-inline" for="hya"><input type="checkbox" name="hy[]" data-am-ucheck value="轻工纺织" id="hya">轻工纺织</label>
+    				<label class="am-checkbox-inline" for="hyb"><input type="checkbox" name="hy[]" data-am-ucheck value="金融投资" id="hyb">金融投资</label>
+    				<label class="am-checkbox-inline" for="hyc"><input type="checkbox" name="hy[]" data-am-ucheck value="食品饮料" id="hyc">食品饮料</label>
+    				<label class="am-checkbox-inline" for="hyd"><input type="checkbox" name="hy[]" data-am-ucheck value="物流仓储" id="hyd">物流仓储</label>
+    				<label class="am-checkbox-inline" for="hye"><input type="checkbox" name="hy[]" data-am-ucheck value="机械机电" id="hye">机械机电</label>
+    				<label class="am-checkbox-inline" for="hyf"><input type="checkbox" name="hy[]" data-am-ucheck value="加工制造" id="hyf">加工制造</label>
+    				<label class="am-checkbox-inline" for="hyg"><input type="checkbox" name="hy[]" data-am-ucheck value="医疗健康" id="hyg">医疗健康</label>
+    				<label class="am-checkbox-inline" for="hyh"><input type="checkbox" name="hy[]" data-am-ucheck value="基础设施" id="hyh">基础设施</label>
+    				<label class="am-checkbox-inline" for="hyi"><input type="checkbox" name="hy[]" data-am-ucheck value="冶金矿产" id="hyi">冶金矿产</label>
+    				<label class="am-checkbox-inline" for="hyj"><input type="checkbox" name="hy[]" data-am-ucheck value="农林牧渔" id="hyj">农林牧渔</label>
+    				<br>
+                    <label class="am-checkbox-inline" for="hyk"><input type="checkbox" name="hy[]" data-am-ucheck value="住宿餐饮" id="hyk">住宿餐饮</label>
+    				<label class="am-checkbox-inline" for="hyl"><input type="checkbox" name="hy[]" data-am-ucheck value="信息产业" id="hyl">信息产业</label>
+    				<label class="am-checkbox-inline" for="hym"><input type="checkbox" name="hy[]" data-am-ucheck value="广告传媒" id="hym">广告传媒</label>
+    				<label class="am-checkbox-inline" for="hyn"><input type="checkbox" name="hy[]" data-am-ucheck value="建筑建材" id="hyn">建筑建材</label>
+    				<label class="am-checkbox-inline" for="hyo"><input type="checkbox" name="hy[]" data-am-ucheck value="文体娱乐" id="hyo">文体娱乐</label>
+    				<label class="am-checkbox-inline" for="hyp"><input type="checkbox" name="hy[]" data-am-ucheck value="旅游休闲" id="hyp">旅游休闲</label>
+    				<label class="am-checkbox-inline" for="hyq"><input type="checkbox" name="hy[]" data-am-ucheck value="交通运输" id="hyq">交通运输</label>
+    				<label class="am-checkbox-inline" for="hyr"><input type="checkbox" name="hy[]" data-am-ucheck value="教育培训" id="hyr">教育培训</label>
+    				<label class="am-checkbox-inline" for="hys"><input type="checkbox" name="hy[]" data-am-ucheck value="房地产业" id="hys">房地产业</label>
+                    <label class="am-checkbox-inline" for="hyt"><input type="checkbox" name="hy[]" data-am-ucheck value="批发零售" id="hyt">批发零售</label>
+    				<br>
+    				<label class="am-checkbox-inline" for="hyu"><input type="checkbox" name="hy[]" data-am-ucheck value="政府/事业单位" id="hyu">政府/事业单位</label>
+    				<label class="am-checkbox-inline" for="hyv"><input type="checkbox" name="hy[]" data-am-ucheck value="家具日用" id="hyv">家具日用</label>
+    				<label class="am-checkbox-inline" for="hyw"><input type="checkbox" name="hy[]" data-am-ucheck value="园林园艺" id="hyw">园林园艺</label>
+    				<label class="am-checkbox-inline" for="hyx"><input type="checkbox" name="hy[]" data-am-ucheck value="珠宝/收藏/奢侈品" id="hyx">珠宝/收藏/奢侈品</label>
+    				<label class="am-checkbox-inline" for="hyy"><input type="checkbox" name="hy[]" data-am-ucheck value="影视出版" id="hyy">影视出版</label>
+    				<label class="am-checkbox-inline" for="hyz"><input type="checkbox" name="hy[]" data-am-ucheck value="航空航天" id="hyz">航空航天</label>
+    				<label class="am-checkbox-inline" for="hy0"><input type="checkbox" name="hy[]" data-am-ucheck value="电气设备" id="hy0">电气设备</label>
+    				<label class="am-checkbox-inline" for="hy11"><input type="checkbox" name="hy[]" data-am-ucheck value="汽车汽配" id="hy11">汽车汽配</label>
+    				<label class="am-checkbox-inline" for="hy10"><input type="checkbox" name="hy[]" data-am-ucheck value="其他行业" id="hy10">其他行业</label>
+                    </div>
+    				</div>
+    			</div>
+
+    			<div class="formDv">
+                    <div class="am-form-group">
+                        <label>投资额度</label>
+                        <div class="formDvDX">
+                            <label class="am-radio" for="tzed0"><input type="radio" name="tzed" data-am-ucheck checked value="100万以下" id="tzed0">100万以下</label>
+                            <label class="am-radio" for="tzed1"><input type="radio" name="tzed" data-am-ucheck value="100-500万" id="tzed1">100-500万</label>
+                            <label class="am-radio" for="tzed2"><input type="radio" name="tzed" data-am-ucheck value="500-1000万" id="tzed2">500-1000万</label>
+                            <label class="am-radio" for="tzed3"><input type="radio" name="tzed" data-am-ucheck value="1000-3000万" id="tzed3">1000-3000万</label>
+                            <label class="am-radio" for="tzed4"><input type="radio" name="tzed" data-am-ucheck value="3000万-1亿" id="tzed4">3000万-1亿</label>
+                            <label class="am-radio" for="tzed5"><input type="radio" name="tzed" data-am-ucheck value="1亿以上" id="tzed5">1亿以上</label>
+        				</div>
+                    </div>
+    			</div>
+
+    			<div class="formDv">
+                    <div class="am-form-group">
+                        <label for="doc-ta-1">项目介绍 (介绍下项目核心优势)</label>
+                        <textarea rows="5" id="doc-ta-1" name="xmjs"></textarea>
+                    </div>
+    			</div>
+
+    			<div class="formDv">
+                    <div class="am-form-group">
+                        <label>融资额度</label>
+                        <input type="text" class="inputTxt" placeholder="融资额度" name="xmztzed">
+                    </div>
+    			</div>
+
+                <div class="formDv">
+                    <div class="am-form-group">
+                        <label>已融额度</label>
+                        <input type="text" class="inputTxt" placeholder="已融额度" name="yred">
+                    </div>
+    			</div>
+
+                <div class="formDv">
+                    <div class="am-form-group">
+                        <label>项目估值</label>
+                        <input type="text" class="inputTxt" placeholder="项目估值" name="xmgz">
+                    </div>
+    			</div>
+
+    			<div class="formDv">
+                    <div class="am-form-group">
+                        <label>所在地</label>
+                        <input type="text" class="inputTxt" placeholder="所在地" name="szd">
+                    </div>
+    			</div>
+
+    			<div class="formDv">
+                    <div class="am-form-group">
+                        <label>联系人</label>
+        				<input type="text" class="inputTxt" placeholder="联系人" name="lxr">
+                    </div>
+    			</div>
+
+                <div class="formDv">
+                    <div class="am-form-group">
+                        <label>联系电话</label>
+        				<input type="text" class="inputTxt" placeholder="联系电话" name="lxdh">
+                    </div>
+    			</div>
+
+    			<div class="formDv">
+    				<input type="submit" class="am-btn am-btn-primary" value="发 布">
+    			</div>
+    			</form>
+    		</div>
+        </fieldset>
+        </form>
+    </div>
+
+</body>
+<script src="__PUBLIC__/js/jquery.min.js" charset="utf-8"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.4.0/js/amazeui.min.js" charset="utf-8"></script>
+</html>

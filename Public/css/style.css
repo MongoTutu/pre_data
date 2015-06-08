@@ -1,0 +1,11 @@
+body{background:#F5F7F2;color: #434343;}
+.wraper{width: 1050px;margin: 0 auto;}
+.header{background: #515151;height: 50px;line-height: 50px;}
+.logo{color: #E0EFE0;font-size: 1.5em;float: left;}
+.menu_list{float: left;margin-left: 50px;}
+.menu_list .list_item{float: left;color: #E0EFE0;text-align: center;width: 70px;}
+.menu_list .list_item a{display: block;}
+.menu_list .list_item:hover{background: #3A3A3A;}
+
+.article{margin: 20px 0;}
+.news{background: #FFF;padding: 20px;box-shadow: 0 0 3px 1px #DDD;}

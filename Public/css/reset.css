@@ -1,0 +1,71 @@
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+em, img,small, strong,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label,
+table, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+
+body,button, input, select, textarea {
+	font-size: 14px;
+	font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+	text-decoration: none;
+}
+
+a:link,a:visited,a:hover,a:active {
+	color: inherit;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+fieldset,img {
+	border: none;
+}
+
+button,input,select,textarea {
+	font-size: 100%;
+	font-family: inherit;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.4em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1em;
+}
