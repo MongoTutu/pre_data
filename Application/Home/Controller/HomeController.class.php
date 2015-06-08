@@ -7,18 +7,17 @@ class HomeController extends Controller {
         $this->redirect('add_tz');
     }
 
-    public function news(){
+    public function add_tz(){
         $this->display();
+    }
+
+    public function add_rz(){
+
     }
 
     public function add_news_post(){
         $d = I();
         dump($d);
-    }
-
-    public function uploads(){
-        $d = $_FILES;
-        $this->ajaxReturn($d);
     }
 
 }
